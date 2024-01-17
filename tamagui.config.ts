@@ -4,6 +4,7 @@ import { shorthands } from '@tamagui/shorthands';
 import { config as DefaultConfig } from '@tamagui/config';
 import { createTamagui } from 'tamagui';
 import { createAnimations } from '@tamagui/animations-react-native';
+import { scaleX, scaleY } from './App/Components/Responsive/Responsive';
 
 const animations = createAnimations({
   bouncy: {
@@ -61,18 +62,18 @@ const config = createTamagui({
     11: 60
   },
   media: createMedia({
-    xs: { maxWidth: 660 },
-    sm: { maxWidth: 800 },
-    md: { maxWidth: 1020 },
-    lg: { maxWidth: 1280 },
-    xl: { maxWidth: 1420 },
-    xxl: { maxWidth: 1600 },
-    gtXs: { minWidth: 660 + 1 },
-    gtSm: { minWidth: 800 + 1 },
-    gtMd: { minWidth: 1020 + 1 },
-    gtLg: { minWidth: 1280 + 1 },
-    short: { maxHeight: 820 },
-    tall: { minHeight: 820 },
+    xs: { maxWidth: scaleX(660) },
+    sm: { maxWidth: scaleX(800) },
+    md: { maxWidth: scaleX(1020) },
+    lg: { maxWidth: scaleX(1280) },
+    xl: { maxWidth: scaleX(1420) },
+    xxl: { maxWidth: scaleX(1600) },
+    gtXs: { minWidth: scaleX(660 + 1) },
+    gtSm: { minWidth: scaleX(800 + 1) },
+    gtMd: { minWidth: scaleX(1020 + 1) },
+    gtLg: { minWidth: scaleX(1280 + 1) },
+    short: { maxWidth: scaleY(820) },
+    tall: { minWidth: scaleY(820) },
     hoverNone: { hover: 'none' },
     pointerCoarse: { pointer: 'coarse' },
   })
