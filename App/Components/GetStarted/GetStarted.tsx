@@ -12,8 +12,8 @@ export const GetStarted: FC = () => {
       w='100%' h='100%' fd='column' jc='center' px={25} mt={25}
       $gtXs={{ px: 30, mt: 30 }} $gtSm={{ px: 35, mt: 35 }}
     >
-
-      <View $gtMd={{ ai: 'center', w: '100%' }}>
+      <Text>Screen = {media.gtSm ? 'Screen Big' : "Screen Smol"}</Text>
+      <View $gtSm={{ ai: 'center', w: '100%' }}>
         <Text
           fos={50} ls={-1} fow='bold' ff={'$heading'} col={Colors.black_main}
           $gtXs={{ fos: 55 }} $gtSm={{ fos: 60 }}
