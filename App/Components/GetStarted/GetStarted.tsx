@@ -22,7 +22,7 @@ export const GetStarted: FC = () => {
       </View>
       <View mt={scaleX(30)}>
         <Button
-          w='100%' br={5} h={scaleX(50)} bg={Colors.grey_rect}
+          w='100%' br={5} h={scaleX(40)} bg={Colors.grey_rect}
         >
           <ButtonIcon>
             <SpotifySvg color={Colors.green_spotify} width={scaleX(24)} height={scaleX(24)} />
@@ -34,7 +34,7 @@ export const GetStarted: FC = () => {
           </ButtonText>
         </Button>
         <Button
-          w='100%' br={5} h={scaleX(50)} mt={scaleX(10)} bg={Colors.grey_rect}
+          w='100%' br={5} h={scaleX(40)} mt={scaleX(10)} bg={Colors.grey_rect}
         >
           <ButtonIcon>
             <YoutubeSvg color={Colors.red_youtube} width={scaleX(25)} height={scaleX(25)} />
@@ -53,7 +53,7 @@ export const GetStarted: FC = () => {
           <View fg={1} h={1} bg={Colors.grey_tertiary} mt={2}></View>
         </View>
         <Button
-          w='100%' br={5} h={scaleX(50)} mt={scaleX(8)} bg={Colors.blue_main}
+          w='100%' br={5} h={scaleX(40)} mt={scaleX(8)} bg={Colors.blue_main}
         >
           <ButtonText
             ff='$body' fos={scaleX(16)} ls={-.5} col='white'
