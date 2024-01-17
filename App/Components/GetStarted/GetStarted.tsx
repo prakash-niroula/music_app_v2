@@ -11,12 +11,12 @@ export const GetStarted: FC = () => {
 
   return (
     <View
-      w='100%' h='100%' fd='column' jc='center' px={scaleX(25)} mt={scaleY(25)}
+      w='100%' h='100%' fd='column' jc='center' px={scaleX(25)} mt={scaleY(30)}
     >
       <View>
         <Text
           
-          fos={scaleX(50)} ls={-1} fow='bold' ff={'$heading'} col={Colors.black_main}
+          fos={scaleX(40)} ls={-1} fow='bold' ff={'$heading'} col={Colors.black_main}
         >
           Get Started.
         </Text>
@@ -26,10 +26,10 @@ export const GetStarted: FC = () => {
           w='100%' br={5} h={scaleY(50)} bg={Colors.grey_rect}
         >
           <ButtonIcon>
-            <SpotifySvg color={Colors.green_spotify} width={scaleX(25)} height={scaleX(25)} />
+            <SpotifySvg color={Colors.green_spotify} width={scaleX(24)} height={scaleX(24)} />
           </ButtonIcon>
           <ButtonText
-            ff='$body' fos={scaleX(15)} ls={-.5} col={Colors.grey_main}
+            ff='$body' fos={scaleX(16)} ls={-.5} col={Colors.grey_main}
           >
             Connect with Spotify
           </ButtonText>
@@ -41,7 +41,7 @@ export const GetStarted: FC = () => {
             <YoutubeSvg color={Colors.red_youtube} width={scaleX(25)} height={scaleX(25)} />
           </ButtonIcon>
           <ButtonText
-            ff='$body' fos={scaleX(15)} ls={-.5} col={Colors.grey_main}
+            ff='$body' fos={scaleX(16)} ls={-.5} col={Colors.grey_main}
           >
             Connect with Youtube
           </ButtonText>
@@ -57,7 +57,7 @@ export const GetStarted: FC = () => {
           w='100%' br={5} h={scaleY(50)} mt={scaleY(8)} bg={Colors.blue_main}
         >
           <ButtonText
-            ff='$body' fos={scaleX(15)} ls={-.5} col='white'
+            ff='$body' fos={scaleX(16)} ls={-.5} col='white'
           >
             Connect as Guest
           </ButtonText>

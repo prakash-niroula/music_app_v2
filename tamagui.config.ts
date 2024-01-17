@@ -28,7 +28,7 @@ const animations = createAnimations({
 const headingFont = createInterFont({
   face: {
     normal: {
-      normal: 'InterBold'
+      normal: 'Inter'
     },
     bold: {
       normal: 'InterBold'
