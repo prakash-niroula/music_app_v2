@@ -27,15 +27,15 @@ const animations = createAnimations({
 });
 const headingFont = createInterFont({
   face: {
-    normal: {normal: 'InterBold'}
+    normal: {
+      normal: 'InterBold'
+    },
+    bold: {
+      normal: 'InterBold'
+    }
   }
 });
-
-const bodyFont = createInterFont({
-  face: {
-    normal: {normal: 'InterMedium'}
-  }
-});
+const bodyFont = createInterFont();
 
 const config = createTamagui({
   ...DefaultConfig,
@@ -47,19 +47,6 @@ const config = createTamagui({
   fonts: {
     heading: headingFont,
     body: bodyFont,
-  },
-  margin: {
-    1: 10,
-    2: 15,
-    3: 20,
-    4: 25,
-    5: 30,
-    6: 35,
-    7: 40,
-    8: 45,
-    9: 50,
-    10: 55,
-    11: 60
   },
   media: createMedia({
     xs: { maxWidth: scaleX(660) },

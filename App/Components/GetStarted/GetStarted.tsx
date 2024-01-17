@@ -13,8 +13,9 @@ export const GetStarted: FC = () => {
     <View
       w='100%' h='100%' fd='column' jc='center' px={scaleX(25)} mt={scaleY(25)}
     >
-      <View $gtSm={{ ai: 'center', w: '100%' }}>
+      <View>
         <Text
+          
           fos={scaleX(50)} ls={-1} fow='bold' ff={'$heading'} col={Colors.black_main}
         >
           Get Started.
