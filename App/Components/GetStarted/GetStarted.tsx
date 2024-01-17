@@ -4,15 +4,17 @@ import { View, Text, ButtonIcon, Button, ButtonText, useMedia } from "tamagui";
 import SpotifySvg from '@/assets/svgs/spotify.svg';
 import YoutubeSvg from '@/assets/svgs/youtube.svg'
 import { Colors } from "@/App/Components/Colors/Colors";
+import { Dimensions } from "react-native";
 
 export const GetStarted: FC = () => {
   const media = useMedia();
+
   return (
     <View
       w='100%' h='100%' fd='column' jc='center' px={25} mt={25}
       $gtXs={{ px: 30, mt: 30 }} $gtSm={{ px: 35, mt: 35 }}
     >
-      <Text>Screen = {media.gtSm ? 'Screen Big' : "Screen Smol"}</Text>
+      <Text>Screen = {Dimensions.get('window').width} x {Dimensions.get('window').height}</Text>
       <View $gtSm={{ ai: 'center', w: '100%' }}>
         <Text
           fos={50} ls={-1} fow='bold' ff={'$heading'} col={Colors.black_main}
