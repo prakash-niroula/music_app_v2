@@ -27,11 +27,13 @@ export const GetStarted: FC = () => {
           <ButtonIcon>
             <SpotifySvg color={Colors.green_spotify} width={scaleX(24)} height={scaleX(24)} />
           </ButtonIcon>
-          <ButtonText
-            ff='$body' fos={scaleX(18)} ls={-.5} col={Colors.grey_main}
-          >
-            Connect with Spotify
-          </ButtonText>
+          <View h='100%' jc='center'>
+            <Text
+              ff='$body' fos={scaleX(18)} ls={-.5} col={Colors.grey_main}
+            >
+              Connect with Spotify
+            </Text>
+          </View>
         </Button>
         <Button
           w='100%' br={5} h={scaleX(50)} mt={scaleX(10)} bg={Colors.grey_rect}
@@ -39,27 +41,31 @@ export const GetStarted: FC = () => {
           <ButtonIcon>
             <YoutubeSvg color={Colors.red_youtube} width={scaleX(25)} height={scaleX(25)} />
           </ButtonIcon>
-          <ButtonText
-            ff='$body' fos={scaleX(18)} ls={-.5} col={Colors.grey_main}
-          >
-            Connect with Youtube
-          </ButtonText>
+          <View h='100%' jc='center'>
+            <Text
+              ff='$body' fos={scaleX(18)} ls={-.5} col={Colors.grey_main}
+            >
+              Connect with Youtube
+            </Text>
+          </View>
         </Button>
         <View
           fd='row' ai='center' mt={scaleX(8)}
         >
-          <View fg={1} h={1} bg={Colors.grey_tertiary} mt={2}></View>
-          <Text px={5} ls={-.5} col={Colors.grey_secondary}>or</Text>
-          <View fg={1} h={1} bg={Colors.grey_tertiary} mt={2}></View>
+          <View fg={1} h={1} bg={Colors.grey_tertiary} mt={scaleX(3)}></View>
+          <Text px={5} fos={scaleX(18)} ls={-.5} col={Colors.grey_secondary}>or</Text>
+          <View fg={1} h={1} bg={Colors.grey_tertiary} mt={scaleX(3)}></View>
         </View>
         <Button
           w='100%' br={5} h={scaleX(50)} mt={scaleX(8)} bg={Colors.blue_main}
         >
-          <ButtonText
-            ff='$body' fos={scaleX(18)} ls={-.5} col='white'
-          >
-            Connect as Guest
-          </ButtonText>
+          <View h='100%' jc='center'>
+            <Text
+              ff='$body' fos={scaleX(18)} ls={-.5} col='white'
+            >
+              Connect as Guest
+            </Text>
+          </View>
         </Button>
       </View>
     </View>

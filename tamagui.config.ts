@@ -43,7 +43,11 @@ const config = createTamagui({
   defaultTheme: 'dark',
   shouldAddPrefersColorThemes: false,
   themeClassNameOnRoot: false,
-  shorthands,
+  shorthands: {
+    ...shorthands,
+    sp: 'space',
+    sd: 'spaceDirection'
+  } as const,
   fonts: {
     heading: headingFont,
     body: bodyFont,
