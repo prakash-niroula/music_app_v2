@@ -4,15 +4,25 @@ import { TamaguiProvider, Theme } from "tamagui";
 import { useFonts } from "expo-font";
 import config from "./tamagui.config";
 import DefaultScreen from "./App/Screens/Default/DefaultScreen";
+import {
+  Inter_100Thin, Inter_200ExtraLight, Inter_300Light, Inter_400Regular,
+  Inter_500Medium, Inter_600SemiBold, Inter_700Bold, Inter_800ExtraBold, Inter_900Black
+} from "@expo-google-fonts/inter";
 
 export default function App() {
   const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    Inter: require("@tamagui/font-inter/otf/Inter-Medium.otf"),
-    InterBold: require("@tamagui/font-inter/otf/Inter-Bold.otf"),
-    InterRegular: require("@tamagui/font-inter/otf/Inter-Regular.otf")
+  const [fontsLoaded] = useFonts({
+    Inter_100Thin,
+    Inter_200ExtraLight,
+    Inter_300Light,
+    Inter_400Regular,
+    Inter_500Medium,
+    Inter_600SemiBold,
+    Inter_700Bold,
+    Inter_800ExtraBold,
+    Inter_900Black,
   });
-  if (!loaded) {
+  if (!fontsLoaded) {
     return null;
   }
   return (

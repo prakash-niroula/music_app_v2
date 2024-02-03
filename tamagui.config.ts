@@ -2,7 +2,7 @@ import { createInterFont } from '@tamagui/font-inter';
 import { createMedia } from '@tamagui/react-native-media-driver';
 import { shorthands } from '@tamagui/shorthands';
 import { config as DefaultConfig } from '@tamagui/config';
-import { createTamagui } from 'tamagui';
+import { createFont, createTamagui } from 'tamagui';
 import { createAnimations } from '@tamagui/animations-react-native';
 import { scaleX, scaleY } from './App/Components/Responsive/Responsive';
 
@@ -25,23 +25,20 @@ const animations = createAnimations({
     stiffness: 250,
   }
 });
-const headingFont = createInterFont({
+
+const fonts = createFont({
+  family: 'Inter',
+  size: {
+    4: 16
+  },
   face: {
-    normal: {
-      normal: 'Inter'
-    },
-    bold: {
-      normal: 'InterBold'
-    }
-  }
-});
-const bodyFont = createInterFont({
-  face: {
-    normal: {
-      normal: 'InterRegular'
-    }
-  }
-});
+    normal: {normal: 'Inter_500Medium'},
+    300: { normal: 'Inter_300Light' },
+    400: { normal: 'Inter_400Regular' },
+    600: { normal: 'Inter_600SemiBold' },
+    bold: { normal: 'Inter_700Bold' },
+  },
+})
 
 const config = createTamagui({
   ...DefaultConfig,
@@ -55,8 +52,8 @@ const config = createTamagui({
     sd: 'spaceDirection'
   } as const,
   fonts: {
-    heading: headingFont,
-    body: bodyFont,
+    heading: fonts,
+    body: fonts,
   },
   media: createMedia({
     xs: { maxWidth: scaleX(660) },

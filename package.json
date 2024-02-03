@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.2.3",
     "@tamagui/animations-react-native": "^1.85.12",
     "@tamagui/babel-plugin": "^1.85.12",
     "@tamagui/config": "^1.85.12",

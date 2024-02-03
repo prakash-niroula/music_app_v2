@@ -21,14 +21,14 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
       w='100%' h='100%' jc='space-between' px={scaleX(25)} pt={scaleX(40)}
     >
       <BackSvg width={scaleX(20)} height={scaleX(20)} />
-      <View>
+      <View mb={scaleX(100)}>
         <View w='100%' ai='center'>
-          <Text fow='bold' fos={scaleX(18)}>Configure Spotify Settings.</Text>
+          <Text fow={"600"} fos={scaleX(18)}>Configure Spotify Settings.</Text>
           <View w='85%' fd='row' jc='center' fw="wrap">
-            <Text fos={scaleX(14)} col={Colors.grey_secondary}>
+            <Text fos={scaleX(14)} fow="400" col={Colors.grey_secondary}>
               Configure your spotify settings such
             </Text>
-            <Text fos={scaleX(14)} col={Colors.grey_secondary}>
+            <Text fos={scaleX(14)} fow="400" col={Colors.grey_secondary}>
               as playlist, favorite songs, podcast etc.
             </Text>
           </View>
@@ -107,7 +107,7 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
           </Button>
         </View>
       </View>
-      <View></View>
+      
     </View>
   ) : (
     <View>
