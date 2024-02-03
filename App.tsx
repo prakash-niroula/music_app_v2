@@ -3,7 +3,7 @@ import { useColorScheme } from "react-native";
 import { TamaguiProvider, Theme } from "tamagui";
 import { useFonts } from "expo-font";
 import config from "./tamagui.config";
-import DefaultScreen from "./App/DefaultScreen";
+import DefaultScreen from "./App/Screens/Default/DefaultScreen";
 
 export default function App() {
   const colorScheme = useColorScheme();

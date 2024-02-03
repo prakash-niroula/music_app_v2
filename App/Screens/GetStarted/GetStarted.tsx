@@ -4,7 +4,7 @@ import { View, Text, ButtonIcon, Button, ButtonText, useMedia } from "tamagui";
 import SpotifySvg from '@/assets/svgs/spotify.svg';
 import YoutubeSvg from '@/assets/svgs/youtube.svg'
 import { Colors } from "@/App/Components/Colors/Colors";
-import { scaleX, scaleY } from "../Responsive/Responsive";
+import { scaleX, scaleY } from "@/App/Components/Responsive/Responsive";
 
 export const GetStarted: FC = () => {
   const media = useMedia();

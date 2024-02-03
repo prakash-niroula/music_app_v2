@@ -1,10 +1,11 @@
 import { FC } from "react";
 import { View, Text } from "react-native";
-import GetStarted from "./Components/GetStarted/GetStarted";
+import GetStarted from "../GetStarted/GetStarted";
+import ConfigureConnect from "../Configure/ConfigureConnect";
 
 export const DefaultScreen: FC = () => {
   return (
-    <GetStarted />
+    <ConfigureConnect platform="Spotify"/>
   );
 }
 
