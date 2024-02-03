@@ -7,5 +7,6 @@ export const Colors = {
   blue_main: '#5184FE',
   grey_rect: '#F8F8F8',
   red_youtube: '#f00',
-  green_spotify: '#22dd64'
+  green_spotify: '#22dd64',
+  grey_neutral: '#B5B5B5'
 }

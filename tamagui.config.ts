@@ -35,7 +35,13 @@ const headingFont = createInterFont({
     }
   }
 });
-const bodyFont = createInterFont();
+const bodyFont = createInterFont({
+  face: {
+    normal: {
+      normal: 'InterRegular'
+    }
+  }
+});
 
 const config = createTamagui({
   ...DefaultConfig,

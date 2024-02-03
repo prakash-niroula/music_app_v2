@@ -41,7 +41,7 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
             <View w='100%' fd='row' h='100%' ai='center'>
               { playlist_s ? <TickmarkBlueSvg/> : <TickmarkSvg/> }
               <Text
-                ff='$body' fos={scaleX(16)} col={Colors.grey_main}
+                ff='$body' fos={scaleX(16)} col={Colors.black_main}
                 ml={scaleX(14)}
               >
                 Import Playlists
@@ -55,7 +55,7 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
             <View w='100%' fd='row' h='100%' ai='center'>
               { liked_s ? <TickmarkBlueSvg/> : <TickmarkSvg/> }
               <Text
-                ff='$body' fos={scaleX(16)} col={Colors.grey_main}
+                ff='$body' fos={scaleX(16)} col={Colors.black_main}
                 ml={scaleX(14)}
               >
                 Import Liked Songs
@@ -72,7 +72,7 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
               <Text
                 ff='$body' fos={scaleX(16)}
                 ml={scaleX(14)}
-                col={Colors.grey_main}
+                col={Colors.black_main}
               >
                 Import Podcasts
               </Text>
@@ -81,11 +81,14 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
         </View>
         <View mt={scaleX(30)}>
           <Button
-            w='100%' br={5} h={scaleX(50)} mt={scaleX(8)} bg={Colors.blue_main}
+            w='100%' br={5} h={scaleX(50)} mt={scaleX(8)}
+            bg={(playlist_s||liked_s||podcasts_s) ? Colors.blue_main : Colors.grey_rect}
+            disabled={!(playlist_s||liked_s||podcasts_s)}
           >
             <View h='100%' jc='center'>
               <Text
-                ff='$body' fos={scaleX(18)} ls={-.5} col='white'
+                ff='$body' fos={scaleX(18)} ls={-.5}
+                col={(playlist_s||liked_s||podcasts_s) ? 'white' : Colors.grey_neutral }
               >
                 Continue
               </Text>
