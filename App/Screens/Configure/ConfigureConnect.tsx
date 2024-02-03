@@ -21,11 +21,11 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
       w='100%' h='100%' jc='space-between' px={scaleX(25)} pt={scaleX(40)}
     >
       <BackSvg width={scaleX(20)} height={scaleX(20)} />
-      <View mb={scaleX(100)}>
+      <View mb={scaleX(180)}>
         <View w='100%' ai='center'>
           <Text fow={"600"} fos={scaleX(18)}>Configure Spotify Settings.</Text>
           <View w='85%' fd='row' jc='center' fw="wrap">
-            <Text fos={scaleX(14)} fow="400" col={Colors.grey_secondary}>
+            <Text fos={scaleX(14)} fow="400" col={Colors.grey_secondary} mb={scaleX(-2)}>
               Configure your spotify settings such
             </Text>
             <Text fos={scaleX(14)} fow="400" col={Colors.grey_secondary}>
@@ -33,9 +33,9 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
             </Text>
           </View>
         </View>
-        <View mt={scaleX(40)}>
+        <View mt={scaleX(30)}>
           <Button
-            w='100%' br={5} h={scaleX(44)} mt={scaleX(8)} bg={Colors.grey_rect}
+            w='100%' br={5} h={scaleX(48)} mt={scaleX(8)} bg={Colors.grey_rect}
             onPress={() => set_playlist_s(!playlist_s)}
           >
             <View w='100%' fd='row' h='100%' ai='center'>
@@ -49,7 +49,7 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
             </View>
           </Button>
           <Button
-            w='100%' br={5} h={scaleX(44)} mt={scaleX(8)} bg={Colors.grey_rect}
+            w='100%' br={5} h={scaleX(48)} mt={scaleX(8)} bg={Colors.grey_rect}
             onPress={() => set_liked_s(!liked_s)}
           >
             <View w='100%' fd='row' h='100%' ai='center'>
@@ -63,7 +63,7 @@ export const ConfigureConnect: FC<ConfigureConnectProps> = ({ platform }) => {
             </View>
           </Button>
           <Button
-            w='100%' br={5} h={scaleX(44)} mt={scaleX(8)}
+            w='100%' br={5} h={scaleX(48)} mt={scaleX(8)}
             onPress={() => set_podcasts_s(!podcasts_s)}
             bg={Colors.grey_rect}
           >
